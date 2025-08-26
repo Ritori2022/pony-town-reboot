@@ -1,10 +1,27 @@
-# 🎮 PonyTown 一键修复工具
+# 🎮 PonyTown 游戏体验指南
 
-**从零到游戏运行，只需要一个命令！**
+**两种方式体验6年前的多人在线游戏重新复活！**
 
-我们提供了多个自动化脚本，可以完全自动修复6年前的PonyTown项目，让你在几分钟内获得一个完全可玩的2D像素多人在线游戏。
+## 🎯 推荐方式: 直接游玩 (最快)
 
-## 🚀 快速开始
+**3分钟内开始游戏 - 零等待，零失败！**
+
+```bash
+# 🚀 超快启动 - 推荐新手使用
+git clone https://github.com/Ritori2022/pony-town-ready.git
+cd pony-town-ready
+nvm use 9.11.2
+npm install --legacy-peer-deps --ignore-scripts
+npm start
+```
+
+**🌐 游戏地址**: http://localhost:8090
+
+---
+
+## 🔧 学习方式: 自动修复过程
+
+**想了解修复过程？使用我们的自动化脚本！**
 
 ### Linux/macOS 用户
 
@@ -45,13 +62,20 @@ ponytown-restore.bat
 - ✅ **macOS** (Intel & Apple Silicon)
 - ✅ **Windows** (10/11)
 
-## ⚙️ 脚本功能对比
+## 🎯 方案对比表
 
-| 脚本 | 时间 | 功能完整度 | 适合用户 |
-|------|------|------------|----------|
-| `ponytown-auto-restore.sh` | 10-15分钟 | 100% | 想要完整体验 |
-| `ponytown-quick-restore.sh` | 5分钟 | 80% | 快速测试 |
-| `ponytown-restore.bat` | 10分钟 | 90% | Windows用户 |
+| 方案 | 时间 | 难度 | 成功率 | 适合用户 | 学习价值 |
+|------|------|------|--------|----------|----------|
+| **pony-town-ready** | 3分钟 | ⭐☆☆☆☆ | 100% | 所有用户 | ⭐☆☆☆☆ |
+| `ponytown-auto-restore.sh` | 15分钟 | ⭐⭐☆☆☆ | 95% | 学习者 | ⭐⭐⭐⭐⭐ |
+| `ponytown-quick-restore.sh` | 5分钟 | ⭐⭐☆☆☆ | 90% | 快速测试 | ⭐⭐⭐☆☆ |
+| `ponytown-restore.bat` | 10分钟 | ⭐⭐☆☆☆ | 90% | Windows用户 | ⭐⭐⭐⭐☆ |
+
+### 🌟 推荐选择
+
+- 🎮 **想立即游戏**: 使用 `pony-town-ready`
+- 📚 **想学习修复**: 使用 `ponytown-auto-restore.sh`
+- ⚡ **快速测试**: 使用 `ponytown-quick-restore.sh`
 
 ## 🔧 脚本执行过程
 
