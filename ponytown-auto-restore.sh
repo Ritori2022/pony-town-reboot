@@ -88,19 +88,16 @@ mkdir -p "$WORK_DIR"
 cd "$WORK_DIR"
 
 header "\n📥 第2步: 下载原始项目"
-log "正在下载PonyTown原始项目..."
-if [ ! -f "master.zip" ]; then
-    wget -O master.zip https://github.com/drewdru/ponyTown/archive/master.zip
+log "正在下载PonyTown原始项目 (使用稳定fork版本)..."
+if [ ! -d "ponytown-project" ]; then
+    git clone https://github.com/Ritori2022/ponyTown.git ponytown-project
     success "原始项目下载完成"
 else
     log "原始项目已存在，跳过下载"
 fi
 
-log "正在解压项目..."
-unzip -q master.zip
-mv ponyTown-master ponytown-project
 cd ponytown-project
-success "项目解压完成"
+success "项目准备完成"
 
 header "\n🔧 第3步: 下载修复资源"
 log "正在克隆修复资源仓库..."

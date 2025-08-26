@@ -10,17 +10,74 @@
 ![Node](https://img.shields.io/badge/Node.js-v9.11.2-green)
 ![Angular](https://img.shields.io/badge/Angular-8-red)
 
-## 🚀 快速体验
+## 🎮 两种使用方式
 
-想要立即运行这个游戏吗？
+我们提供两种方式来体验这个修复后的游戏：
 
-1. **下载原始项目**: `wget https://github.com/drewdru/ponyTown/archive/master.zip`
-2. **克隆此仓库获取修复文件**: `git clone https://github.com/Ritori2022/pony-town-reboot.git`
-3. **运行自动修复脚本**: `./auto-fix.sh` 
-4. **按照详细指南完成修复**: 查看 [COMPLETE_REBUILD_GUIDE.md](COMPLETE_REBUILD_GUIDE.md)
-5. **启动游戏**: `DEVELOPMENT=true node pony-town.js --login --local --game`
+### 🚀 方式1: 直接使用修复后项目 (推荐)
+
+**最快方式：直接克隆已修复版本！**
+
+```bash
+# 即将推出：ponytown-ready 仓库
+# 包含所有修复，直接可用，无需等待修复过程
+
+git clone https://github.com/Ritori2022/ponytown-ready.git
+cd ponytown-ready
+nvm use 9.11.2
+npm install --legacy-peer-deps --ignore-scripts
+npm start  # 或: DEVELOPMENT=true node pony-town.js --login --local --game
+```
+
+### 🔧 方式2: 自动修复过程 (学习用)
+
+**学习修复过程：从原始项目自动修复！**
+
+### Linux/macOS 用户
+
+```bash
+# 完整自动修复 (10-15分钟，推荐)
+wget https://raw.githubusercontent.com/Ritori2022/pony-town-reboot/main/ponytown-auto-restore.sh
+chmod +x ponytown-auto-restore.sh
+./ponytown-auto-restore.sh
+```
+
+```bash
+# 快速修复 (5分钟，测试用)
+wget https://raw.githubusercontent.com/Ritori2022/pony-town-reboot/main/ponytown-quick-restore.sh
+chmod +x ponytown-quick-restore.sh  
+./ponytown-quick-restore.sh
+```
+
+### Windows 用户
+
+```batch
+# 下载并运行Windows批处理脚本
+curl -o ponytown-restore.bat https://raw.githubusercontent.com/Ritori2022/pony-town-reboot/main/ponytown-restore.bat
+ponytown-restore.bat
+```
+
+### 🎯 脚本功能
+- ✅ 自动下载原始项目 (使用我们fork的稳定版本)
+- ✅ 自动设置Node.js 9.11.2环境
+- ✅ 自动安装所有依赖包
+- ✅ 自动应用100+个修复
+- ✅ 自动创建测试数据
+- ✅ 可选择立即启动游戏
 
 **🌐 游戏地址**: http://localhost:8090
+
+---
+
+## 🔧 手动修复 (高级用户)
+
+如果你想了解修复过程或自动脚本失败：
+
+1. **下载项目**: `git clone https://github.com/Ritori2022/ponyTown.git`
+2. **获取修复文件**: `git clone https://github.com/Ritori2022/pony-town-reboot.git`
+3. **运行半自动脚本**: `./auto-fix.sh` 
+4. **详细修复指南**: 查看 [COMPLETE_REBUILD_GUIDE.md](COMPLETE_REBUILD_GUIDE.md)
+5. **启动游戏**: `DEVELOPMENT=true node pony-town.js --login --local --game`
 
 ## 📖 项目背景
 

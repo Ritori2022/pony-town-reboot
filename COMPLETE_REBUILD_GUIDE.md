@@ -12,10 +12,9 @@
 
 ### 第1步：获取原始项目
 ```bash
-# 下载原始6年前的项目
-wget https://github.com/drewdru/ponyTown/archive/master.zip
-unzip master.zip
-cd ponyTown-master
+# 克隆稳定的fork版本 (确保内容一致性)
+git clone https://github.com/Ritori2022/ponyTown.git
+cd ponyTown
 ```
 
 ### 第2步：环境设置

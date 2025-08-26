@@ -16,10 +16,8 @@ echo "📁 创建工作目录: $WORK_DIR"
 mkdir "$WORK_DIR" && cd "$WORK_DIR"
 
 # 下载原始项目
-echo "📥 下载原始PonyTown项目..."
-wget -q https://github.com/drewdru/ponyTown/archive/master.zip
-unzip -q master.zip
-mv ponyTown-master ponytown
+echo "📥 下载原始PonyTown项目 (使用稳定fork版本)..."
+git clone -q https://github.com/Ritori2022/ponyTown.git ponytown
 cd ponytown
 echo "✅ 项目下载完成"
 

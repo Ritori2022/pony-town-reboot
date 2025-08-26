@@ -39,13 +39,10 @@ cd "%WORK_DIR%"
 
 :: 下载原始项目
 echo.
-echo 📥 下载PonyTown原始项目...
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/drewdru/ponyTown/archive/master.zip' -OutFile 'master.zip'"
-if not exist master.zip (echo ❌ 下载失败 && pause && exit)
+echo 📥 下载PonyTown原始项目 (使用稳定fork版本)...
+git clone https://github.com/Ritori2022/ponyTown.git ponytown
+if not exist ponytown (echo ❌ 下载失败 && pause && exit)
 
-echo 📦 解压项目文件...
-powershell -Command "Expand-Archive -Path 'master.zip' -DestinationPath '.' -Force"
-ren ponyTown-master ponytown
 cd ponytown
 echo ✅ 项目准备完成
 
